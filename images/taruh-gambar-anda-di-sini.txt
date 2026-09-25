@@ -1,0 +1,2 @@
+Taruh file foto/logo Anda di folder ini (contoh: hero-1.jpg, logo.png, dst).
+Lihat README.txt di folder utama untuk panduan lengkap cara menggunakannya di index.html.

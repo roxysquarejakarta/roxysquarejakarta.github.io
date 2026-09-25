@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Roxy Square Jakarta - One Stop Business Place: Office Space, Training Center & Retail di lokasi strategis Jakarta Barat.">
+<title>Roxy Square Jakarta | One Stop Business Place</title>
+
+<!-- ============================================================
+     File CSS terpisah, ada di folder css/style.css
+     ============================================================ -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     NAVBAR
+     - Ganti "LOGO" dengan <img src="images/logo.png" alt="Logo"> jika punya file logo
+     - Ganti teks menu & href sesuai kebutuhan
+     ========================================================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="navbar__logo">
+      <!-- GANTI DENGAN GAMBAR LOGO ANDA: -->
+           <img src="images/RLS_Logo.png" alt="Roxy Square">
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#layanan" class="nav-link">Office Space</a>
+      <a href="#fasilitas" class="nav-link">Training Facility</a>
+      <a href="#mitra" class="nav-link">Tenant</a>
+      <a href="#harga" class="nav-link">Price</a>
+      <a href="#lokasi-info" class="nav-link">Access</a>
+      <a href="#tentang" class="nav-link">About Us</a>
+      <a href="#kontak" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="navbar__toggle" id="menuBtn" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Panel menu versi mobile -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#layanan">Office Space</a>
+    <a href="#fasilitas">Training Facility</a>
+    <a href="#mitra">Tenant</a>
+    <a href="#harga">Price</a>
+    <a href="#lokasi-info">Access</a>
+    <a href="#tentang">About Us</a>
+    <a href="#kontak">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- =========================================================
+       HERO / CAROUSEL
+       - Duplikasi blok <div class="slide">...</div> untuk menambah slide
+       - Ganti judul, deskripsi, dan gambar tiap slide
+       ========================================================= -->
+  <section id="home" class="hero">
+    <div class="carousel" id="carousel">
+      <div class="carousel__track" id="carouselTrack">
+
+        <div class="slide">
+          <div class="slide__content">
+            <p class="eyebrow">Welcome to Roxy Square</p>
+            <h1>One Stop <span class="text-accent">Business Place</span> in<br>West Jakarta</h1>
+            <p class="slide__desc">
+              Roxy Square hadir dengan konsep baru berupa Kawasan Perkantoran, Retail Shoping dan Training Center yang modern dan stylis. Berada di lokasi strategis serta lahan parkir yang cukup luas dengan 400 slot mobil dan 600 slot motor untuk kemudahan parkir Anda dalam Berbisnis dan Berbelanja. Roxy Square solusi TEPAT dan NYAMAN tempat Bisnis dan Berbelanja Anda.
+            </p>
+            <!-- <a href="#kontak" class="btn btn--primary">Hubungi Kami</a> -->
+          </div>
+          <div class="slide__media">
+            <!-- GANTI DENGAN GAMBAR ANDA: -->
+                 <img src="images/Image1-DwxTyNQ1.png" alt="Gedung Roxy Square">            
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__content">
+            <p class="eyebrow">Office Space</p>
+            <h1>Beragam <span class="text-accent">Unit Kios</span> dan office space untuk bisnis impian anda.</h1>
+            <p class="slide__desc">
+              Cari ruangan untuk kantor atau bisnis? Datang dan temukan solusinya di Roxy Square. Tersedia unit kios & office space untuk kebutuhan usaha Anda, lokasi strategis dan dilengkapi dengan fasilitas dan keamanan 24 jam akan membuat bisnis Anda berkembang dengan baik. Segera hubungi kami untuk informasi unit yang tersedia dan info lainnya.
+            </p>
+            <!-- <a href="#layanan" class="btn btn--primary">Lihat Layanan</a> -->
+          </div>
+          <div class="slide__media">
+			<!-- GANTI DENGAN GAMBAR ANDA -->			
+				 <img src="images/Office Space5-1c6sUUAu.png" alt="Area Minibar Office">            
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__content">
+            <p class="eyebrow">Training Space Center</p>
+            <h1>Tempat <span class="text-accent">Training terintegrasi</span> lengkap!</h1>
+            <p class="slide__desc">
+              Training yang efektif dan nyaman hanya ada di ROXY SQUARE. Tempat Training Center yang terintegrasi dengan Mess bagi peserta training menjadi Pilihan TEPAT untuk Anda yang ingin mengadakan Training/Seminar. Tersedia berbagai ruang training dengan fasilitas lengkap: Meja, Kursi, proyektor, Glass Board, sound system, dan tersedia juga fasilitas Ruang Makan, Lounge, Laundry, ruang Gym & Fitness, ruang Karaoke, menjadikan training Anda semakin menarik dan Efektif. Hubungi kami untuk informasi Unit Training dan Mess yang tersedia dan info lainnya.
+            </p>
+            <!-- <a href="#fasilitas" class="btn btn--primary">Lihat Fasilitas</a> -->
+          </div>
+          <div class="slide__media">
+            <!-- GANTI DENGAN GAMBAR ANDA -->
+            <!-- GANTI DENGAN GAMBAR ANDA -->			
+				 <img src="images/img-training2-qZIQ3_SQ.png" alt="Training Space Center">
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel__btn carousel__btn--prev" id="prevBtn" aria-label="Sebelumnya">&#8249;</button>
+      <button class="carousel__btn carousel__btn--next" id="nextBtn" aria-label="Berikutnya">&#8250;</button>
+    </div>
+    <div class="carousel__dots" id="carouselDots"></div>
+  </section>
+
+  <!-- =========================================================
+       LAYANAN / GALERI
+       - Tambah atau hapus <div class="gallery__item"> sesuai jumlah foto
+       ========================================================= -->
+  <section id="layanan" class="section">
+    <h2 class="section__title">Our Office Space</h2>
+    <p class="section__subtitle">Ruang kerja modern dengan fasilitas lengkap dan lokasi strategis di Jakarta Barat.</p>
+
+    <div class="gallery">
+      <div class="gallery__item lightbox-trigger" data-group="office" data-title="Office Space Roxy Square 1" data-desc="Area lobby &amp; resepsionis yang nyaman untuk menyambut tamu bisnis Anda.">
+        <img src="images/Galeri1.png" alt="Office Space Roxy Square 1">
+      </div>
+      <div class="gallery__item lightbox-trigger" data-group="office" data-title="Office Space Roxy Square 2" data-desc="Ruang kerja dengan pencahayaan alami yang mendukung produktivitas tim.">
+        <img src="images/Galeri2.png" alt="Office Space Roxy Square 2">
+      </div>
+      <div class="gallery__item lightbox-trigger" data-group="office" data-title="Office Space Roxy Square 3" data-desc="Koridor gedung yang bersih dan terawat dengan keamanan 24 jam.">
+        <img src="images/Galeri3.png" alt="Office Space Roxy Square 3">
+      </div>
+      <div class="gallery__item lightbox-trigger" data-group="office" data-title="Office Space Roxy Square 4" data-desc="Unit kios siap pakai dengan akses mudah ke area parkir.">
+        <img src="images/Galeri4.png" alt="Office Space Roxy Square 4">
+      </div>
+      <div class="gallery__item lightbox-trigger" data-group="office" data-title="Office Space Roxy Square 5" data-desc="Fasilitas umum gedung yang lengkap untuk mendukung operasional bisnis.">
+        <img src="images/Galeri5.png" alt="Office Space Roxy Square 5">
+      </div>
+      <div class="gallery__item lightbox-trigger" data-group="office" data-title="Office Space Roxy Square 6" data-desc="Area komersial strategis di lantai dasar Roxy Square.">
+        <img src="images/Galeri6.png" alt="Office Space Roxy Square 6">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FASILITAS (2 gambar besar berdampingan)
+       ========================================================= -->
+  <section id="fasilitas" class="section section--alt">
+    <h2 class="section__title">Our Training Facility</h2>
+    <p class="section__subtitle">Fasilitas training terintegrasi yang nyaman untuk mendukung acara Anda.</p>
+
+    <div class="facility-grid">
+      <div class="facility-grid__item lightbox-trigger" data-group="training" data-title="Fasilitas Training Roxy Square 1" data-desc="Ruang training dengan kapasitas fleksibel dan proyektor lengkap.">
+        <img src="images/Galeri7.png" alt="Fasilitas Training Roxy Square 1">
+      </div>
+      <div class="facility-grid__item lightbox-trigger" data-group="training" data-title="Fasilitas Training Roxy Square 2" data-desc="Ballroom &amp; ruang training besar untuk seminar dan acara korporat.">
+        <img src="images/Galeri8.png" alt="Fasilitas Training Roxy Square 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       MITRA / KLIEN (logo grid)
+       - Duplikasi <div class="partner"> untuk menambah logo
+       ========================================================= -->
+  <section id="mitra" class="section">
+    <h2 class="section__title">Our Tenants</h2>
+    <p class="section__subtitle">Dipercaya oleh berbagai perusahaan dan brand ternama.</p>
+
+    <div class="partners">		
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 1" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant1.png" alt="Logo tenant Roxy Square 1"></div>		
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 2" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant2.png" alt="Logo tenant Roxy Square 2"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 3" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant3.png" alt="Logo tenant Roxy Square 3"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 4" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant4.png" alt="Logo tenant Roxy Square 4"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 5" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant5.png" alt="Logo tenant Roxy Square 5"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 6" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant6.png" alt="Logo tenant Roxy Square 6"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 7" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant7.png" alt="Logo tenant Roxy Square 7"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 8" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant8.png" alt="Logo tenant Roxy Square 8"></div>
+	  <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 9" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant9.png" alt="Logo tenant Roxy Square 9"></div>		
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 10" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant10.png" alt="Logo tenant Roxy Square 10"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 11" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant11.png" alt="Logo tenant Roxy Square 11"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 12" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant12.png" alt="Logo tenant Roxy Square 12"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 13" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant13.png" alt="Logo tenant Roxy Square 13"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 14" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant14.png" alt="Logo tenant Roxy Square 14"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 15" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant15.png" alt="Logo tenant Roxy Square 15"></div>
+      <div class="partner lightbox-trigger" data-group="tenant" data-title="Tenant Roxy Square 16" data-desc="Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."><img src="images/Tenant16.png" alt="Logo tenant Roxy Square 16"></div>	  
+    </div>
+  </section>
+
+  <!-- =========================================================
+       HARGA / PAKET
+       - Duplikasi <div class="price-card"> untuk menambah paket
+       ========================================================= -->
+  <section id="harga" class="section section--alt">
+    <h2 class="section__title">Pricelist</h2>
+    <p class="section__subtitle">Pilih paket yang sesuai dengan kebutuhan bisnis Anda.</p>
+
+    <div class="pricing">
+      <div class="price-card">
+        <p class="price-card__name">Virtual Ofice Plan</p>
+        <p class="price-card__note">Bulanan / Tahunan</p>
+        <p class="price-card__price">Rp.500rb<span>/bulan</span></p>
+        <ul class="price-card__features">
+          <li>Dipercaya 200 Perusahaan</li>
+          <li>Free Operator Telepon</li>
+          <li>Free Layanan Receptionist</li>
+		  <li>Free Layanan Surat Menyurat</li>
+		  <li>Free Meeting Room</li>
+        </ul>
+        <a href="#kontak" class="btn btn--outline">Pilih Paket</a>
+      </div>
+
+      <div class="price-card price-card--highlight">
+        <p class="price-card__badge">Paling Populer</p>
+        <p class="price-card__name">Office Space Plan</p>
+        <p class="price-card__note">200-600 meter persegi</p>
+        <p class="price-card__price">Rp.150rb<span>/m<sup>2</sup></span></p>
+        <ul class="price-card__features">
+          <li>Service Charge Kompetitif</li>
+		  <li>Payroom, Toilet & Pantry Bersama</li>
+		  <li>Security 24 Jam</li>
+		  <li>Tarif Parkir Rendah</li>
+        </ul>
+        <a href="#kontak" class="btn btn--primary">Pilih Paket</a>
+      </div>
+
+      <div class="price-card">
+        <p class="price-card__name">Training Plan</p>
+        <p class="price-card__note">Small, Medium, Large & Ballroom</p>
+        <p class="price-card__price">Rp.500rb<span>/hari</span></p>
+        <ul class="price-card__features">
+          <li>Fasilitas Ruangan</li>
+		  <li>Snack & Drink</li>
+		  <li>Mess, Hall & Dine Room</li>
+		  <li>Mess Optional with Gym and Karaoke</li>
+        </ul>
+        <a href="#kontak" class="btn btn--outline">Pilih Paket</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       LOKASI / AKSES
+       - Ganti isi tiap kolom sesuai info transportasi/akses Anda
+       ========================================================= -->
+  <section id="lokasi-info" class="section">
+    <h2 class="section__title">Access to Roxy Square</h2>
+	<p class="section__subtitle">Mudah dijangkau dengan berbagai moda transportasi umum.</p>
+
+    <div class="access-grid">
+      <div class="access-card">
+        <h3>BUS & APTB</h3>
+        <div class="access-item">
+          <p class="access-item__title">Daya Sentosa utama P.157</p>
+          <p class="access-item__desc">Pasar Senen - Cimone</p>
+        </div>
+        <div class="access-item">
+          <p class="access-item__title">Transjakarta APTB.05</p>
+          <p class="access-item__desc">Grogol - Cibinong</p>
+        </div>
+        <div class="access-item">
+          <p class="access-item__title">Transjakarta APTB.16A</p>
+          <p class="access-item__desc">Grogol - Bogor</p>
+        </div>
+		<div class="access-item">
+          <p class="access-item__title">Transjakarta APTB.16B</p>
+          <p class="access-item__desc">Grogol - Sentul City</p>
+        </div>
+		<div class="access-item">
+          <p class="access-item__title">Transjakarta APTB.23</p>
+          <p class="access-item__desc">Grogol - Depok</p>
+        </div>
+		<div class="access-item">
+          <p class="access-item__title">Transjakarta APTB.15</p>
+          <p class="access-item__desc">Grogol - Ciawi</p>
+        </div>
+      </div>
+	  
+	  <div class="access-card">
+        <h3>Mikrolet & Mikrotrans</h3>
+        <div class="access-item">
+          <p class="access-item__title">Mikrolet KWK B.01</p>
+          <p class="access-item__desc">Pluit - Grogol</p>
+        </div>
+        <div class="access-item">
+          <p class="access-item__title">Jak-8</p>
+          <p class="access-item__desc">Roxy - Karet</p>
+        </div>
+		<div class="access-item">
+          <p class="access-item__title">Jak-7</p>
+          <p class="access-item__desc">Tanah Abang - Tawakal</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- =========================================================
+       TENTANG KAMI
+       ========================================================= -->
+  <section id="tentang" class="section section--alt">
+    <div class="about">
+      <div class="about__media">
+		 <img src="images/Aboutus.png" alt="Gedung Roxy Square Jakarta"> 
+      </div>
+      <div class="about__content">
+        <h2 class="section__title section__title--left">About Us</h2>
+        <p class="about__highlight">PT. Rizki Lancar Sentosa</p>
+        <p>Rizki Lancar Sentosa (RLS) didirikan pada tanggal 11 September 2001, dengan tujuan usaha di bidang Pembangunan (Developer) dan Real Estate. Properti pertama yang dimiliki dan dibangun adalah Gedung Roxy Square yang berlokasi di JL. Kiyai Tapa No. 1 Jakarta Barat, yang merupakan Trade Center berupa Kios, Ruko & Kantor dengan kepemilikan Strata Title dan Milik Sendiri.</p>
+        <p>Pada tahun 2011 terjadi peralihan kepemilikan saham kepada Sinarmas Group dengan susunan pemegang saham PT. Sinarmas Multiartha Tbk (Sebanyak 99%) dan PT. Shinta Utama (Sebanyak 1%).</p>
+		<p>Pada tahun 2019 tujuan dan kegiatan usaha Perusahaan semakin berkembang dan menjadi Holding Company yang mengelola seluruh Asset Property di Group Sinarmas Financial Services, seperti Building Management Gedung Roxy Square Jakarta, Pengelola Mess & Training Center Roxy Square, Pengelola Gedung Menara Mas Semarang, dan beberapa gedung/apartemen serta asset properti lainnya.</p>
+		<p>Susunan pengurus PT. Rizki Lancar Sentosa saat ini sesuai dengan akte perubahan terakhir No. 138 tanggal 15 Oktober 2021, Notaris Syofilawati, SH adalah sebagai berikut:</p>
+		<ul class="about__list">
+		<li>Komisaris: Eric Tunaedi</li>
+		<li>Direktur Utama: Burham</li>
+		<li>Direktur: Indra Gunawan</li>
+		</ul>
+      </div>
+    </div>
+
+    <div class="vision-mission">
+      <div>
+        <h3>Visi</h3>
+        <p>"Menjadi Perusahaan Management Property dan Real Estate yang mengelola seluruh asset properti group Sinarmas Financial Services."</p>
+		<p>"Mengubah asset-asset yang tidak produktif menjadi asset-asset yang produktif dan menguntungkan."</p>
+      </div>
+      <div>
+        <h3>Misi</h3>
+        <p>"Memberikan pelayanan terbaik pada pelanggan dengan fasilitas terbaik dan harga yang kompetitif."</p>
+		<p>"Meningkatkan pertumbuhan perusahaan secara signifikan melalui kenaikan asset dan pendapatan perusahaan."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       KONTAK
+       - Ganti URL src iframe dengan link Google Maps embed lokasi Anda
+       ========================================================= -->
+  <section id="kontak" class="section">
+    <h2 class="section__title">Contact</h2>
+
+    <div class="contact">
+      <div class="contact__map">
+        <!-- Cara mendapatkan link embed: Google Maps > cari lokasi > Bagikan > Sematkan peta -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7314349700146!2d106.7994979!3d-6.166708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f668a92a941f%3A0x78d98be79492db88!2sRoxy%20Square!5e0!3m2!1sen!2sid!4v1790250025816!5m2!1sen!2sid"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Peta Lokasi"
+		  allowfullscreen=""
+		  width="600"
+		  height="450"
+		  style="border:0;">
+        </iframe>
+        <p class="contact__map-note">*Peta memerlukan koneksi internet untuk dimuat.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="footer__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <div>
+        <h4>Building Management</h4>
+        <p>PT. Rizki Lancar Sentosa Jl. Kyai Tapa No. 1, Tomang, Grogol, Petamburan, Jakarta Barat 11440 - Indonesia</p>
+      </div>
+    </div>
+
+    <div class="footer__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+      <div>
+        <h4>Email</h4>
+        <p>roxysquarejakarta@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+      <div>
+        <h4>Telepon</h4>
+        <p>+62 2150112222 / +62 2156953500</p>		
+      </div>
+    </div>
+
+    <div class="footer__item">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-circle"><path d="M19.95 10.05a7 7 0 011.412 7.872 1 1 0 00-.058.787l.675 2.089a1 1 0 01-1.236 1.168l-2.155-.631a1 1 0 00-.745.06 7 7 0 01-7.793-1.445"/><path d="M2.696 12.708a1 1 0 00-.058-.785 7 7 0 113.518 3.473 1 1 0 00-.744-.061l-2.155.63a1 1 0 01-1.236-1.167z"/></svg>
+	  <div>
+        <h4>WhatsApp</h4>
+        <p>+628812340108 / +6289651362528</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__social">
+    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+    <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m18 6-12 12"></path><path d="m6 6 12 12"></path></svg></a>
+    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+    <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V3a5 5 0 0 0 5 5"></path></svg></a>
+    <a href="#" aria-label="Threads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10c0-3-1-5.3-3-7"></path><path d="M9 9c0-1.5 1-2.5 2.5-2.5S14 8 14 10c0 1.5-1 2-2.5 2.5C10 13 9 14 9 15.5S10 18 11.5 18 14 17 14 15"></path></svg></a>
+  </div>
+
+  <div class="footer__bottom">
+    <p>Roxy Square Jakarta &copy; 2026, All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- =========================================================
+     TOMBOL MENGAMBANG (WhatsApp / Kontak cepat)
+     - Ganti nomor 628xxxxxxxxxx dengan nomor Anda
+     ========================================================= -->
+<a href="https://wa.me/628812340108" target="_blank" rel="noopener noreferrer" class="float-btn">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.85 1h.02a7.94 7.94 0 0 0 5.53-13.58ZM12.07 18.4h-.02a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.44-.16-.25a6.62 6.62 0 1 1 12.28-3.5 6.58 6.58 0 0 1-6.67 6.6Zm3.6-4.93c-.2-.1-1.16-.57-1.34-.64-.18-.07-.31-.1-.44.1-.13.2-.5.63-.61.76-.11.13-.22.14-.42.05a5.4 5.4 0 0 1-2.7-2.36c-.2-.35.2-.32.58-1.07.06-.13.03-.24-.02-.34-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.34h-.38c-.13 0-.34.05-.52.24-.18.2-.68.67-.68 1.63s.7 1.9.8 2.03c.1.13 1.37 2.1 3.33 2.94.46.2.83.32 1.11.4.47.15.9.13 1.24.08.38-.06 1.16-.47 1.33-.93.16-.46.16-.85.11-.93-.05-.08-.18-.13-.38-.23Z"></path></svg>
+  <span>Hubungi Kami</span>
+</a>
+
+<!-- =========================================================
+     LIGHTBOX (untuk galeri Office Space, Training Facility & Tenants)
+     ========================================================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox__overlay" id="lightboxOverlay"></div>
+  <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Detail gambar">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Sebelumnya">&#8249;</button>
+    <div class="lightbox__media">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+    <div class="lightbox__info">
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxDesc"></p>
+      <span class="lightbox__count" id="lightboxCount"></span>
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Berikutnya">&#8250;</button>
+  </div>
+</div>
+
+<!-- =========================================================
+     File JavaScript terpisah, ada di folder js/script.js
+     ============================================================ -->
+<script src="js/script.js"></script>
+</body>
+</html>
