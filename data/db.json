@@ -1,5 +1,7 @@
 {
-  "admins": [],
+  "admins": [
+    "madara_uchiha"
+  ],
   "hero": [
     {
       "id": "hero-1",
