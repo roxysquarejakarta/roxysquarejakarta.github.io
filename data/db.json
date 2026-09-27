@@ -103,107 +103,107 @@
     {
       "id": "tenant-2",
       "image": "images/Tenant2.png",
-      "alt": "Logo tenant Roxy Square 2",
-      "title": "Tenant Roxy Square 2",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Toko Onderdil",
+      "title": "Toko Onderdil",
+      "desc": "Second Floor"
     },
     {
       "id": "tenant-3",
       "image": "images/Tenant3.png",
-      "alt": "Logo tenant Roxy Square 3",
-      "title": "Tenant Roxy Square 3",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Bank Sinarmas",
+      "title": "Bank Sinarmas",
+      "desc": "LG Floor"
     },
     {
       "id": "tenant-4",
       "image": "images/Tenant4.png",
-      "alt": "Logo tenant Roxy Square 4",
-      "title": "Tenant Roxy Square 4",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Sinarmas Multifinance",
+      "title": "Sinarmas Multifinance",
+      "desc": "First Floor"
     },
     {
       "id": "tenant-5",
       "image": "images/Tenant5.png",
-      "alt": "Logo tenant Roxy Square 5",
-      "title": "Tenant Roxy Square 5",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "A&W Restaurant",
+      "title": "A&W Restaurant",
+      "desc": "LG Floor"
     },
     {
       "id": "tenant-6",
       "image": "images/Tenant6.png",
-      "alt": "Logo tenant Roxy Square 6",
-      "title": "Tenant Roxy Square 6",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Osbond Gym",
+      "title": "Osbond Gym",
+      "desc": "LG Floor"
     },
     {
       "id": "tenant-7",
       "image": "images/Tenant7.png",
-      "alt": "Logo tenant Roxy Square 7",
-      "title": "Tenant Roxy Square 7",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "3A Billiard Lounge",
+      "title": "3A Billiard Lounge",
+      "desc": "Basement Floor"
     },
     {
       "id": "tenant-8",
       "image": "images/Tenant8.png",
-      "alt": "Logo tenant Roxy Square 8",
-      "title": "Tenant Roxy Square 8",
+      "alt": "Dryalogy",
+      "title": "Dryalogy",
       "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
     },
     {
       "id": "tenant-9",
       "image": "images/Tenant9.png",
-      "alt": "Logo tenant Roxy Square 9",
-      "title": "Tenant Roxy Square 9",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "OLX Mobbi",
+      "title": "OLX Mobbi",
+      "desc": "Sixth Floor"
     },
     {
       "id": "tenant-10",
       "image": "images/Tenant10.png",
-      "alt": "Logo tenant Roxy Square 10",
-      "title": "Tenant Roxy Square 10",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Danamas",
+      "title": "Danamas",
+      "desc": "Fifth Floor"
     },
     {
       "id": "tenant-11",
       "image": "images/Tenant11.png",
-      "alt": "Logo tenant Roxy Square 11",
-      "title": "Tenant Roxy Square 11",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Transpacific Finance",
+      "title": "Transpacific Finance",
+      "desc": "Second Floor"
     },
     {
       "id": "tenant-12",
       "image": "images/Tenant12.png",
-      "alt": "Logo tenant Roxy Square 12",
-      "title": "Tenant Roxy Square 12",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "PinjamanGo",
+      "title": "PinjamanGo",
+      "desc": "Second Floor"
     },
     {
       "id": "tenant-13",
       "image": "images/Tenant13.png",
-      "alt": "Logo tenant Roxy Square 13",
-      "title": "Tenant Roxy Square 13",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Bank Nano Syariah",
+      "title": "Bank Nano Syariah",
+      "desc": "Second Floor"
     },
     {
       "id": "tenant-14",
       "image": "images/Tenant14.png",
-      "alt": "Logo tenant Roxy Square 14",
-      "title": "Tenant Roxy Square 14",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Sinarmas Ventura",
+      "title": "Sinarmas Ventura",
+      "desc": "First Floor"
     },
     {
       "id": "tenant-15",
       "image": "images/Tenant15.png",
-      "alt": "Logo tenant Roxy Square 15",
-      "title": "Tenant Roxy Square 15",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Danasaham",
+      "title": "Danasaham",
+      "desc": "First Floor"
     },
     {
       "id": "tenant-16",
       "image": "images/Tenant16.png",
-      "alt": "Logo tenant Roxy Square 16",
-      "title": "Tenant Roxy Square 16",
-      "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta."
+      "alt": "Arthamas Solusindo",
+      "title": "Arthamas Solusindo",
+      "desc": "First Floor"
     }
   ],
   "pricing": [
