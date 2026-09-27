@@ -1,0 +1,221 @@
+/* =====================================================================
+   PANEL ADMIN — style terpisah dari halaman utama.
+   Memakai variabel warna (--color-primary, --color-accent, dst) yang
+   sudah didefinisikan di ../css/style.css agar temanya senada dengan
+   website utama (navy & oranye dari logo Roxy Square).
+   ===================================================================== */
+
+.admin-body {
+  background: var(--color-bg-alt);
+  min-height: 100vh;
+  font-family: var(--font-body);
+}
+
+/* PENTING: atribut HTML [hidden] harus selalu menang atas display:flex
+   milik .admin-login / .admin-app di bawah, jika tidak kedua view akan
+   tetap tampil bertumpuk. */
+[hidden] { display: none !important; }
+
+/* =====================================================================
+   LOGIN VIEW
+   ===================================================================== */
+.admin-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(160deg, var(--color-primary) 0%, #1a1852 55%, var(--color-primary-dark) 100%);
+}
+.admin-login__card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+}
+.admin-login__brand { text-align: center; margin-bottom: 1.5rem; }
+.admin-login__brand img { height: 48px; margin: 0 auto 0.8rem; }
+.admin-login__brand h1 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+.admin-login__brand p { color: var(--color-text-light); font-size: 0.88rem; }
+
+.admin-form__row { margin-bottom: 1rem; }
+.admin-form__row--split { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+@media (min-width: 480px) {
+  .admin-form__row--split { grid-template-columns: 1fr 1fr; }
+}
+.admin-form__row--inline { display: flex; gap: 0.6rem; margin-bottom: 1rem; }
+.admin-form__row--inline input { flex: 1; }
+.admin-form__field label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--color-dark); margin-bottom: 0.35rem; }
+.admin-form__field input,
+.admin-form__field textarea,
+.admin-form__field select,
+.admin-form__row--inline input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+.admin-form__field textarea { resize: vertical; min-height: 70px; }
+.admin-form__field input:focus,
+.admin-form__field textarea:focus,
+.admin-form__row--inline input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(12,3,104,0.12);
+}
+.admin-checkbox { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.8rem; color: var(--color-text-light); margin-bottom: 1.2rem; cursor: pointer; }
+.admin-checkbox input { margin-top: 0.2rem; }
+
+.admin-form__actions { display: flex; gap: 0.7rem; justify-content: flex-end; }
+.admin-form__actions .btn,
+.admin-login__card .btn { cursor: pointer; border: 1px solid transparent; font-family: inherit; font-size: 0.92rem; }
+.admin-login__card .btn--outline { border-color: var(--color-primary); background: none; }
+
+.admin-help { margin-top: 1.4rem; font-size: 0.85rem; color: var(--color-text-light); }
+.admin-help summary { cursor: pointer; font-weight: 600; color: var(--color-primary); }
+.admin-help ol { margin: 0.8rem 0 0.8rem 1.2rem; }
+.admin-help li { margin-bottom: 0.4rem; }
+.admin-help__warn { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 0.8rem; margin-top: 0.6rem; color: #7c2d12; }
+
+.admin-alert {
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+.admin-alert--success { background: #ecfdf5; border-color: #a7f3d0; color: #065f46; }
+.admin-alert--error { background: #fef2f2; border-color: #fecaca; color: #991b1b; }
+.admin-alert--warn { background: #fffbeb; border-color: #fde68a; color: #92400e; }
+
+/* =====================================================================
+   DASHBOARD APP LAYOUT
+   ===================================================================== */
+.admin-app { display: flex; min-height: 100vh; }
+
+.admin-sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  background: #0b0a2e;
+  color: #cbd0e0;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.admin-sidebar__brand { display: flex; align-items: center; gap: 0.6rem; padding: 1.2rem; border-bottom: 1px solid #1a1852; }
+.admin-sidebar__brand img { height: 30px; }
+.admin-sidebar__brand span { font-weight: 700; color: var(--color-white); font-size: 0.95rem; }
+.admin-nav { flex: 1; overflow-y: auto; padding: 0.6rem; }
+.admin-nav__item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #cbd0e0;
+  padding: 0.65rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  cursor: pointer;
+  margin-bottom: 0.2rem;
+  font-family: inherit;
+  transition: var(--transition);
+}
+.admin-nav__item:hover { background: #14153f; color: var(--color-white); }
+.admin-nav__item.is-active { background: var(--color-accent); color: var(--color-white); font-weight: 600; }
+.admin-sidebar__footer { padding: 1rem; border-top: 1px solid #1a1852; }
+.admin-user { font-size: 0.8rem; color: #a5abc4; margin-bottom: 0.6rem; word-break: break-word; }
+.admin-logout { width: 100%; border-color: #3a3878; color: var(--color-white); background: none; cursor: pointer; }
+.admin-logout:hover { background: var(--color-accent); border-color: var(--color-accent); }
+
+.admin-main { flex: 1; min-width: 0; padding: 1.6rem 2rem 3rem; }
+.admin-topbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.4rem; }
+.admin-topbar h2 { font-family: var(--font-heading); }
+.admin-badge { font-size: 0.78rem; padding: 0.3rem 0.7rem; border-radius: 999px; background: #f3f4f6; color: var(--color-text-light); font-weight: 600; }
+.admin-badge--ok { background: #ecfdf5; color: #065f46; }
+.admin-badge--error { background: #fef2f2; color: #991b1b; }
+
+.admin-toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 500;
+  padding: 0.8rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  max-width: 320px;
+}
+.admin-toast--success { background: #065f46; color: #fff; }
+.admin-toast--error { background: #991b1b; color: #fff; }
+
+.admin-tab { display: none; }
+.admin-tab.is-active { display: block; }
+.admin-tab__desc { color: var(--color-text-light); font-size: 0.9rem; margin-bottom: 1rem; max-width: 640px; }
+
+.admin-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin-bottom: 1.4rem; }
+.admin-stat-card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.1rem; text-align: center; }
+.admin-stat-card strong { display: block; font-size: 1.6rem; color: var(--color-primary); font-family: var(--font-heading); }
+.admin-stat-card span { font-size: 0.78rem; color: var(--color-text-light); }
+
+.admin-card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.4rem; margin-bottom: 1rem; }
+.admin-card h3 { margin-bottom: 0.6rem; font-size: 1rem; }
+.admin-card p { font-size: 0.88rem; color: var(--color-text-light); }
+
+.admin-list { display: flex; flex-direction: column; gap: 0.9rem; margin: 1rem 0 1.4rem; }
+.admin-item-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+}
+.admin-item-card__head { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.8rem; }
+.admin-item-card__head strong { font-size: 0.85rem; color: var(--color-text-light); }
+.admin-item-card__actions { display: flex; gap: 0.4rem; }
+.admin-icon-btn {
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  border-radius: 6px;
+  width: 30px; height: 30px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.admin-icon-btn:hover { background: var(--color-bg-alt); }
+.admin-icon-btn--danger:hover { background: #fef2f2; border-color: #fecaca; color: #991b1b; }
+.admin-icon-btn--move:hover { background: #eff6ff; }
+
+.admin-item-card .admin-form__row--split { margin-bottom: 0.8rem; }
+.admin-item-card .admin-form__field { margin-bottom: 0.8rem; }
+.admin-item-card__thumb { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; border: 1px solid var(--color-border); background: var(--color-bg-alt); }
+
+.admin-feature-list { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.6rem; }
+.admin-feature-list__row { display: flex; gap: 0.4rem; }
+.admin-feature-list__row input { flex: 1; }
+
+.admin-save-btn { cursor: pointer; border: none; }
+
+.admin-subcard { border: 1px dashed var(--color-border); border-radius: 8px; padding: 0.9rem; margin-bottom: 0.8rem; }
+.admin-subcard__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; }
+
+@media (max-width: 760px) {
+  .admin-app { flex-direction: column; }
+  .admin-sidebar { width: 100%; height: auto; position: relative; flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .admin-sidebar__brand { border-bottom: none; }
+  .admin-nav { display: flex; overflow-x: auto; padding: 0.5rem; gap: 0.3rem; width: 100%; }
+  .admin-nav__item { width: auto; white-space: nowrap; margin-bottom: 0; }
+  .admin-sidebar__footer { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; border-top: none; }
+  .admin-user { margin-bottom: 0; }
+  .admin-logout { width: auto; }
+  .admin-main { padding: 1.2rem; }
+  /* Toast dipindah ke bawah di layar kecil supaya tidak menutupi navigasi sidebar/topbar */
+  .admin-toast { top: auto; bottom: 1rem; left: 1rem; right: 1rem; max-width: none; }
+}

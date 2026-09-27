@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel Admin | Roxy Square Jakarta</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<!-- =========================================================
+     VIEW 1: LOGIN
+     ========================================================= -->
+<div class="admin-login" id="loginView">
+  <div class="admin-login__card">
+    <div class="admin-login__brand">
+      <img src="../images/RLS_Logo.png" alt="Roxy Square">
+      <h1>Panel Admin</h1>
+      <p>Kelola konten website Roxy Square Jakarta langsung ke GitHub repository Anda.</p>
+    </div>
+
+    <form id="loginForm" class="admin-form">
+      <div class="admin-form__row admin-form__row--split">
+        <div class="admin-form__field">
+          <label for="fOwner">GitHub Owner / Organisasi</label>
+          <input type="text" id="fOwner" placeholder="mis. rizkilancarsentosa" required>
+        </div>
+        <div class="admin-form__field">
+          <label for="fRepo">Nama Repository</label>
+          <input type="text" id="fRepo" placeholder="mis. roxy-square-website" required>
+        </div>
+      </div>
+      <div class="admin-form__row admin-form__row--split">
+        <div class="admin-form__field">
+          <label for="fBranch">Branch</label>
+          <input type="text" id="fBranch" placeholder="main" value="main" required>
+        </div>
+        <div class="admin-form__field">
+          <label for="fPath">Path Database JSON</label>
+          <input type="text" id="fPath" placeholder="data/db.json" value="data/db.json" required>
+        </div>
+      </div>
+      <div class="admin-form__field">
+        <label for="fToken">GitHub Personal Access Token (Fine-grained)</label>
+        <input type="password" id="fToken" placeholder="github_pat_xxxxxxxxxxxxxxxx" required>
+      </div>
+      <label class="admin-checkbox">
+        <input type="checkbox" id="fRemember">
+        <span>Ingat token di perangkat ini (localStorage) — jika tidak dicentang, token otomatis terhapus saat tab ditutup</span>
+      </label>
+
+      <div class="admin-alert" id="loginAlert" hidden></div>
+
+      <div class="admin-form__actions">
+        <button type="button" class="btn btn--outline" id="testConnBtn">Cek Koneksi</button>
+        <button type="submit" class="btn btn--primary">Login</button>
+      </div>
+    </form>
+
+    <details class="admin-help">
+      <summary>Belum punya Personal Access Token? Klik di sini</summary>
+      <ol>
+        <li>Buka <strong>github.com &rarr; Settings &rarr; Developer settings &rarr; Fine-grained tokens &rarr; Generate new token</strong>.</li>
+        <li>Pada <strong>Repository access</strong>, pilih <em>Only select repositories</em> dan pilih repository website ini saja.</li>
+        <li>Pada <strong>Permissions &rarr; Repository permissions</strong>, set <strong>Contents = Read and write</strong>.</li>
+        <li>Klik <strong>Generate token</strong>, salin tokennya (hanya tampil sekali), lalu tempel di kolom Token di atas.</li>
+      </ol>
+      <p class="admin-help__warn">
+        ⚠️ Token disimpan di browser Anda sendiri agar panel ini bisa langsung menyimpan perubahan ke GitHub tanpa server tambahan.
+        Gunakan token <strong>fine-grained</strong> yang hanya diberi akses ke repository ini, jangan pernah membagikan token Anda,
+        dan gunakan panel ini hanya di perangkat pribadi yang terpercaya.
+      </p>
+    </details>
+  </div>
+</div>
+
+<!-- =========================================================
+     VIEW 2: DASHBOARD (tampil setelah login berhasil)
+     ========================================================= -->
+<div class="admin-app" id="dashboardView" hidden>
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar__brand">
+      <img src="../images/RLS_Logo.png" alt="Roxy Square">
+      <span>Panel Admin</span>
+    </div>
+    <nav class="admin-nav" id="adminNav">
+      <button class="admin-nav__item is-active" data-tab="dashboard">📊 Dashboard</button>
+      <button class="admin-nav__item" data-tab="connection">🔌 Cek Koneksi</button>
+      <button class="admin-nav__item" data-tab="hero">🖼️ Hero Slider</button>
+      <button class="admin-nav__item" data-tab="office">🏢 Office Space</button>
+      <button class="admin-nav__item" data-tab="training">🎓 Training Facility</button>
+      <button class="admin-nav__item" data-tab="tenants">🤝 Tenants</button>
+      <button class="admin-nav__item" data-tab="pricing">💳 Pricelist</button>
+      <button class="admin-nav__item" data-tab="access">🚌 Access / Lokasi</button>
+      <button class="admin-nav__item" data-tab="about">📄 About Us</button>
+      <button class="admin-nav__item" data-tab="contact">✉️ Contact & Sosial</button>
+      <button class="admin-nav__item" data-tab="users">👤 Manajemen User</button>
+    </nav>
+    <div class="admin-sidebar__footer">
+      <div class="admin-user" id="sidebarUser">–</div>
+      <button class="btn btn--outline admin-logout" id="logoutBtn">Logout</button>
+    </div>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <h2 id="tabTitle">Dashboard</h2>
+      <span class="admin-badge" id="connBadge">● memeriksa koneksi…</span>
+    </header>
+
+    <div class="admin-toast" id="toast" hidden></div>
+
+    <!-- ---------- TAB: DASHBOARD ---------- -->
+    <section class="admin-tab is-active" data-tab-panel="dashboard">
+      <p class="admin-tab__desc">Ringkasan konten yang sedang tersimpan di <code>data/db.json</code> pada repository Anda.</p>
+      <div class="admin-stats" id="dashboardStats"></div>
+      <div class="admin-card">
+        <h3>Tentang Panel Admin ini</h3>
+        <p>Panel ini membaca dan menulis konten langsung ke file <code>data/db.json</code> di repository GitHub Anda melalui GitHub REST API, menggunakan Personal Access Token yang Anda masukkan saat login. Setiap perubahan yang disimpan akan otomatis membuat commit baru, dan GitHub Pages akan membangun ulang situs dalam waktu singkat (biasanya 30–60 detik).</p>
+      </div>
+    </section>
+
+    <!-- ---------- TAB: CEK KONEKSI ---------- -->
+    <section class="admin-tab" data-tab-panel="connection">
+      <p class="admin-tab__desc">Periksa status koneksi ke GitHub API, hak akses repository, dan sisa kuota API (rate limit).</p>
+      <button class="btn btn--primary" id="recheckConnBtn">Cek Ulang Koneksi</button>
+      <div class="admin-card" id="connDetails" style="margin-top:1rem;">Memeriksa...</div>
+    </section>
+
+    <!-- ---------- TAB: HERO SLIDER ---------- -->
+    <section class="admin-tab" data-tab-panel="hero">
+      <p class="admin-tab__desc">Kelola slide pada carousel hero di halaman utama.</p>
+      <button class="btn btn--outline" data-add="hero">+ Tambah Slide</button>
+      <div class="admin-list" id="list-hero"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="hero">💾 Simpan Perubahan Hero ke GitHub</button>
+    </section>
+
+    <!-- ---------- TAB: OFFICE SPACE ---------- -->
+    <section class="admin-tab" data-tab-panel="office">
+      <p class="admin-tab__desc">Kelola foto galeri pada bagian "Our Office Space".</p>
+      <button class="btn btn--outline" data-add="officeGallery">+ Tambah Foto</button>
+      <div class="admin-list" id="list-officeGallery"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="officeGallery">💾 Simpan Perubahan ke GitHub</button>
+    </section>
+
+    <!-- ---------- TAB: TRAINING FACILITY ---------- -->
+    <section class="admin-tab" data-tab-panel="training">
+      <p class="admin-tab__desc">Kelola foto pada bagian "Our Training Facility".</p>
+      <button class="btn btn--outline" data-add="trainingFacility">+ Tambah Foto</button>
+      <div class="admin-list" id="list-trainingFacility"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="trainingFacility">💾 Simpan Perubahan ke GitHub</button>
+    </section>
+
+    <!-- ---------- TAB: TENANTS ---------- -->
+    <section class="admin-tab" data-tab-panel="tenants">
+      <p class="admin-tab__desc">Kelola logo & info tenant pada bagian "Our Tenants".</p>
+      <button class="btn btn--outline" data-add="tenants">+ Tambah Tenant</button>
+      <div class="admin-list" id="list-tenants"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="tenants">💾 Simpan Perubahan ke GitHub</button>
+    </section>
+
+    <!-- ---------- TAB: PRICING ---------- -->
+    <section class="admin-tab" data-tab-panel="pricing">
+      <p class="admin-tab__desc">Kelola paket harga pada bagian "Pricelist".</p>
+      <button class="btn btn--outline" data-add="pricing">+ Tambah Paket</button>
+      <div class="admin-list" id="list-pricing"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="pricing">💾 Simpan Perubahan ke GitHub</button>
+    </section>
+
+    <!-- ---------- TAB: ACCESS ---------- -->
+    <section class="admin-tab" data-tab-panel="access">
+      <p class="admin-tab__desc">Kelola kategori & daftar transportasi pada bagian "Access to Roxy Square".</p>
+      <button class="btn btn--outline" data-add="access">+ Tambah Kategori</button>
+      <div class="admin-list" id="list-access"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="access">💾 Simpan Perubahan ke GitHub</button>
+    </section>
+
+    <!-- ---------- TAB: ABOUT US ---------- -->
+    <section class="admin-tab" data-tab-panel="about">
+      <p class="admin-tab__desc">Kelola konten profil perusahaan, susunan pengurus, visi & misi.</p>
+      <div class="admin-card" id="aboutForm"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="about">💾 Simpan Perubahan About Us ke GitHub</button>
+    </section>
+
+    <!-- ---------- TAB: CONTACT ---------- -->
+    <section class="admin-tab" data-tab-panel="contact">
+      <p class="admin-tab__desc">Kelola alamat, email, telepon, WhatsApp, link peta, dan sosial media.</p>
+      <div class="admin-card" id="contactForm"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="contact">💾 Simpan Perubahan Kontak ke GitHub</button>
+    </section>
+
+    <!-- ---------- TAB: USER MANAGEMENT ---------- -->
+    <section class="admin-tab" data-tab-panel="users">
+      <p class="admin-tab__desc">
+        Daftar username GitHub yang diizinkan mengakses Panel Admin ini. Jika daftar kosong, siapa pun dengan
+        token repository ini masih bisa login (mode bootstrap) — segera tambahkan username Anda di sini.
+      </p>
+      <div class="admin-alert admin-alert--warn">
+        ⚠️ Ini adalah lapisan kenyamanan di sisi aplikasi, <strong>bukan</strong> pengaman mutlak — siapa pun yang
+        memegang token dengan akses ke repository ini secara teknis tetap bisa memanggil GitHub API secara langsung.
+        Jaga kerahasiaan token Anda.
+      </div>
+      <div class="admin-form__row admin-form__row--inline">
+        <input type="text" id="newAdminUsername" placeholder="username-github">
+        <button class="btn btn--outline" id="addAdminBtn">+ Tambah Admin</button>
+      </div>
+      <div class="admin-list" id="list-admins"></div>
+      <button class="btn btn--primary admin-save-btn" data-save="admins">💾 Simpan Daftar Admin ke GitHub</button>
+    </section>
+  </main>
+</div>
+
+<!-- Template kartu list generik (dipakai lewat JS, lihat admin.js) -->
+<script src="js/admin.js"></script>
+</body>
+</html>

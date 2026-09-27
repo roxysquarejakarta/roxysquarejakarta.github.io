@@ -1,0 +1,164 @@
+{
+  "admins": [],
+  "hero": [
+    {
+      "id": "hero-1",
+      "eyebrow": "Welcome to Roxy Square",
+      "titlePrefix": "One Stop",
+      "titleAccent": "Business Place",
+      "titleSuffix": "in<br>West Jakarta",
+      "desc": "Roxy Square hadir dengan konsep baru berupa Kawasan Perkantoran, Retail Shoping dan Training Center yang modern dan stylis. Berada di lokasi strategis serta lahan parkir yang cukup luas dengan 400 slot mobil dan 600 slot motor untuk kemudahan parkir Anda dalam Berbisnis dan Berbelanja. Roxy Square solusi TEPAT dan NYAMAN tempat Bisnis dan Berbelanja Anda.",
+      "image": "images/Image1-DwxTyNQ1.png",
+      "alt": "Gedung Roxy Square"
+    },
+    {
+      "id": "hero-2",
+      "eyebrow": "Office Space",
+      "titlePrefix": "Beragam",
+      "titleAccent": "Unit Kios",
+      "titleSuffix": "dan office space untuk bisnis impian anda.",
+      "desc": "Cari ruangan untuk kantor atau bisnis? Datang dan temukan solusinya di Roxy Square. Tersedia unit kios & office space untuk kebutuhan usaha Anda, lokasi strategis dan dilengkapi dengan fasilitas dan keamanan 24 jam akan membuat bisnis Anda berkembang dengan baik. Segera hubungi kami untuk informasi unit yang tersedia dan info lainnya.",
+      "image": "images/Office Space5-1c6sUUAu.png",
+      "alt": "Area Minibar Office"
+    },
+    {
+      "id": "hero-3",
+      "eyebrow": "Training Space Center",
+      "titlePrefix": "Tempat",
+      "titleAccent": "Training terintegrasi",
+      "titleSuffix": "lengkap!",
+      "desc": "Training yang efektif dan nyaman hanya ada di ROXY SQUARE. Tempat Training Center yang terintegrasi dengan Mess bagi peserta training menjadi Pilihan TEPAT untuk Anda yang ingin mengadakan Training/Seminar. Tersedia berbagai ruang training dengan fasilitas lengkap: Meja, Kursi, proyektor, Glass Board, sound system, dan tersedia juga fasilitas Ruang Makan, Lounge, Laundry, ruang Gym & Fitness, ruang Karaoke, menjadikan training Anda semakin menarik dan Efektif. Hubungi kami untuk informasi Unit Training dan Mess yang tersedia dan info lainnya.",
+      "image": "images/img-training2-qZIQ3_SQ.png",
+      "alt": "Training Space Center"
+    }
+  ],
+  "officeGallery": [
+    { "id": "office-1", "image": "images/Galeri1.png", "alt": "Office Space Roxy Square 1", "title": "Office Space Roxy Square 1", "desc": "Area lobby & resepsionis yang nyaman untuk menyambut tamu bisnis Anda." },
+    { "id": "office-2", "image": "images/Galeri2.png", "alt": "Office Space Roxy Square 2", "title": "Office Space Roxy Square 2", "desc": "Ruang kerja dengan pencahayaan alami yang mendukung produktivitas tim." },
+    { "id": "office-3", "image": "images/Galeri3.png", "alt": "Office Space Roxy Square 3", "title": "Office Space Roxy Square 3", "desc": "Koridor gedung yang bersih dan terawat dengan keamanan 24 jam." },
+    { "id": "office-4", "image": "images/Galeri4.png", "alt": "Office Space Roxy Square 4", "title": "Office Space Roxy Square 4", "desc": "Unit kios siap pakai dengan akses mudah ke area parkir." },
+    { "id": "office-5", "image": "images/Galeri5.png", "alt": "Office Space Roxy Square 5", "title": "Office Space Roxy Square 5", "desc": "Fasilitas umum gedung yang lengkap untuk mendukung operasional bisnis." },
+    { "id": "office-6", "image": "images/Galeri6.png", "alt": "Office Space Roxy Square 6", "title": "Office Space Roxy Square 6", "desc": "Area komersial strategis di lantai dasar Roxy Square." }
+  ],
+  "trainingFacility": [
+    { "id": "training-1", "image": "images/Galeri7.png", "alt": "Fasilitas Training Roxy Square 1", "title": "Fasilitas Training Roxy Square 1", "desc": "Ruang training dengan kapasitas fleksibel dan proyektor lengkap." },
+    { "id": "training-2", "image": "images/Galeri8.png", "alt": "Fasilitas Training Roxy Square 2", "title": "Fasilitas Training Roxy Square 2", "desc": "Ballroom & ruang training besar untuk seminar dan acara korporat." }
+  ],
+  "tenants": [
+    { "id": "tenant-1", "image": "images/Tenant1.png", "alt": "Logo tenant Roxy Square 1", "title": "Tenant Roxy Square 1", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-2", "image": "images/Tenant2.png", "alt": "Logo tenant Roxy Square 2", "title": "Tenant Roxy Square 2", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-3", "image": "images/Tenant3.png", "alt": "Logo tenant Roxy Square 3", "title": "Tenant Roxy Square 3", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-4", "image": "images/Tenant4.png", "alt": "Logo tenant Roxy Square 4", "title": "Tenant Roxy Square 4", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-5", "image": "images/Tenant5.png", "alt": "Logo tenant Roxy Square 5", "title": "Tenant Roxy Square 5", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-6", "image": "images/Tenant6.png", "alt": "Logo tenant Roxy Square 6", "title": "Tenant Roxy Square 6", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-7", "image": "images/Tenant7.png", "alt": "Logo tenant Roxy Square 7", "title": "Tenant Roxy Square 7", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-8", "image": "images/Tenant8.png", "alt": "Logo tenant Roxy Square 8", "title": "Tenant Roxy Square 8", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-9", "image": "images/Tenant9.png", "alt": "Logo tenant Roxy Square 9", "title": "Tenant Roxy Square 9", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-10", "image": "images/Tenant10.png", "alt": "Logo tenant Roxy Square 10", "title": "Tenant Roxy Square 10", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-11", "image": "images/Tenant11.png", "alt": "Logo tenant Roxy Square 11", "title": "Tenant Roxy Square 11", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-12", "image": "images/Tenant12.png", "alt": "Logo tenant Roxy Square 12", "title": "Tenant Roxy Square 12", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-13", "image": "images/Tenant13.png", "alt": "Logo tenant Roxy Square 13", "title": "Tenant Roxy Square 13", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-14", "image": "images/Tenant14.png", "alt": "Logo tenant Roxy Square 14", "title": "Tenant Roxy Square 14", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-15", "image": "images/Tenant15.png", "alt": "Logo tenant Roxy Square 15", "title": "Tenant Roxy Square 15", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." },
+    { "id": "tenant-16", "image": "images/Tenant16.png", "alt": "Logo tenant Roxy Square 16", "title": "Tenant Roxy Square 16", "desc": "Salah satu mitra tenant yang telah bergabung dan berkembang bersama Roxy Square Jakarta." }
+  ],
+  "pricing": [
+    {
+      "id": "price-1",
+      "name": "Virtual Ofice Plan",
+      "note": "Bulanan / Tahunan",
+      "price": "Rp.500rb",
+      "unit": "/bulan",
+      "highlight": false,
+      "badge": "",
+      "features": ["Dipercaya 200 Perusahaan", "Free Operator Telepon", "Free Layanan Receptionist", "Free Layanan Surat Menyurat", "Free Meeting Room"],
+      "cta": "Pilih Paket"
+    },
+    {
+      "id": "price-2",
+      "name": "Office Space Plan",
+      "note": "200-600 meter persegi",
+      "price": "Rp.150rb",
+      "unit": "/m2",
+      "highlight": true,
+      "badge": "Paling Populer",
+      "features": ["Service Charge Kompetitif", "Payroom, Toilet & Pantry Bersama", "Security 24 Jam", "Tarif Parkir Rendah"],
+      "cta": "Pilih Paket"
+    },
+    {
+      "id": "price-3",
+      "name": "Training Plan",
+      "note": "Small, Medium, Large & Ballroom",
+      "price": "Rp.500rb",
+      "unit": "/hari",
+      "highlight": false,
+      "badge": "",
+      "features": ["Fasilitas Ruangan", "Snack & Drink", "Mess, Hall & Dine Room", "Mess Optional with Gym and Karaoke"],
+      "cta": "Pilih Paket"
+    }
+  ],
+  "access": [
+    {
+      "id": "access-1",
+      "category": "BUS & APTB",
+      "items": [
+        { "title": "Daya Sentosa utama P.157", "desc": "Pasar Senen - Cimone" },
+        { "title": "Transjakarta APTB.05", "desc": "Grogol - Cibinong" },
+        { "title": "Transjakarta APTB.16A", "desc": "Grogol - Bogor" },
+        { "title": "Transjakarta APTB.16B", "desc": "Grogol - Sentul City" },
+        { "title": "Transjakarta APTB.23", "desc": "Grogol - Depok" },
+        { "title": "Transjakarta APTB.15", "desc": "Grogol - Ciawi" }
+      ]
+    },
+    {
+      "id": "access-2",
+      "category": "Mikrolet & Mikrotrans",
+      "items": [
+        { "title": "Mikrolet KWK B.01", "desc": "Pluit - Grogol" },
+        { "title": "Jak-8", "desc": "Roxy - Karet" },
+        { "title": "Jak-7", "desc": "Tanah Abang - Tawakal" }
+      ]
+    }
+  ],
+  "about": {
+    "companyName": "PT. Rizki Lancar Sentosa",
+    "image": "images/Aboutus.png",
+    "alt": "Gedung Roxy Square Jakarta",
+    "paragraphs": [
+      "Rizki Lancar Sentosa (RLS) didirikan pada tanggal 11 September 2001, dengan tujuan usaha di bidang Pembangunan (Developer) dan Real Estate. Properti pertama yang dimiliki dan dibangun adalah Gedung Roxy Square yang berlokasi di JL. Kiyai Tapa No. 1 Jakarta Barat, yang merupakan Trade Center berupa Kios, Ruko & Kantor dengan kepemilikan Strata Title dan Milik Sendiri.",
+      "Pada tahun 2011 terjadi peralihan kepemilikan saham kepada Sinarmas Group dengan susunan pemegang saham PT. Sinarmas Multiartha Tbk (Sebanyak 99%) dan PT. Shinta Utama (Sebanyak 1%).",
+      "Pada tahun 2019 tujuan dan kegiatan usaha Perusahaan semakin berkembang dan menjadi Holding Company yang mengelola seluruh Asset Property di Group Sinarmas Financial Services, seperti Building Management Gedung Roxy Square Jakarta, Pengelola Mess & Training Center Roxy Square, Pengelola Gedung Menara Mas Semarang, dan beberapa gedung/apartemen serta asset properti lainnya."
+    ],
+    "officersIntro": "Susunan pengurus PT. Rizki Lancar Sentosa saat ini sesuai dengan akte perubahan terakhir No. 138 tanggal 15 Oktober 2021, Notaris Syofilawati, SH adalah sebagai berikut:",
+    "officers": [
+      { "role": "Komisaris", "name": "Eric Tunaedi" },
+      { "role": "Direktur Utama", "name": "Burham" },
+      { "role": "Direktur", "name": "Indra Gunawan" }
+    ],
+    "vision": [
+      "Menjadi Perusahaan Management Property dan Real Estate yang mengelola seluruh asset properti group Sinarmas Financial Services.",
+      "Mengubah asset-asset yang tidak produktif menjadi asset-asset yang produktif dan menguntungkan."
+    ],
+    "mission": [
+      "Memberikan pelayanan terbaik pada pelanggan dengan fasilitas terbaik dan harga yang kompetitif.",
+      "Meningkatkan pertumbuhan perusahaan secara signifikan melalui kenaikan asset dan pendapatan perusahaan."
+    ]
+  },
+  "contact": {
+    "address": "PT. Rizki Lancar Sentosa Jl. Kyai Tapa No. 1, Tomang, Grogol, Petamburan, Jakarta Barat 11440 - Indonesia",
+    "email": "roxysquarejakarta@gmail.com",
+    "phones": ["+62 2150112222", "+62 2156953500"],
+    "whatsapp": ["+628812340108", "+6289651362528"],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7314349700146!2d106.7994979!3d-6.166708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f668a92a941f%3A0x78d98be79492db88!2sRoxy%20Square!5e0!3m2!1sen!2sid!4v1790250025816!5m2!1sen!2sid",
+    "socials": {
+      "facebook": "#",
+      "x": "#",
+      "instagram": "#",
+      "tiktok": "#",
+      "threads": "#"
+    }
+  },
+  "footer": {
+    "copyright": "Roxy Square Jakarta &copy; 2026, All rights reserved."
+  }
+}
