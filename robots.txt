@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Jangan index folder admin
+Disallow: /admin/
+
+Sitemap: https://roxysquarejakarta.github.io/sitemap.xml
