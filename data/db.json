@@ -4,9 +4,9 @@
     {
       "id": "hero-1",
       "eyebrow": "Welcome to Roxy Square",
-      "titlePrefix": "One Stop",
-      "titleAccent": "Business Place",
-      "titleSuffix": "in<br>West Jakarta",
+      "titlePrefix": "",
+      "titleAccent": "One Stop Business Place",
+      "titleSuffix": "in West Jakarta",
       "desc": "Roxy Square hadir dengan konsep baru berupa Kawasan Perkantoran, Retail Shoping dan Training Center yang modern dan stylis. Berada di lokasi strategis serta lahan parkir yang cukup luas dengan 400 slot mobil dan 600 slot motor untuk kemudahan parkir Anda dalam Berbisnis dan Berbelanja. Roxy Square solusi TEPAT dan NYAMAN tempat Bisnis dan Berbelanja Anda.",
       "image": "images/Image1-DwxTyNQ1.png",
       "alt": "Gedung Roxy Square"
@@ -15,8 +15,8 @@
       "id": "hero-2",
       "eyebrow": "Office Space",
       "titlePrefix": "Beragam",
-      "titleAccent": "Unit Kios",
-      "titleSuffix": "dan office space untuk bisnis impian anda.",
+      "titleAccent": "Unit Kios & Office Space",
+      "titleSuffix": "untuk bisnis impian anda",
       "desc": "Cari ruangan untuk kantor atau bisnis? Datang dan temukan solusinya di Roxy Square. Tersedia unit kios & office space untuk kebutuhan usaha Anda, lokasi strategis dan dilengkapi dengan fasilitas dan keamanan 24 jam akan membuat bisnis Anda berkembang dengan baik. Segera hubungi kami untuk informasi unit yang tersedia dan info lainnya.",
       "image": "images/Office Space5-1c6sUUAu.png",
       "alt": "Area Minibar Office"
@@ -25,7 +25,7 @@
       "id": "hero-3",
       "eyebrow": "Training Space Center",
       "titlePrefix": "Tempat",
-      "titleAccent": "Training terintegrasi",
+      "titleAccent": "Training Terintegrasi",
       "titleSuffix": "lengkap!",
       "desc": "Training yang efektif dan nyaman hanya ada di ROXY SQUARE. Tempat Training Center yang terintegrasi dengan Mess bagi peserta training menjadi Pilihan TEPAT untuk Anda yang ingin mengadakan Training/Seminar. Tersedia berbagai ruang training dengan fasilitas lengkap: Meja, Kursi, proyektor, Glass Board, sound system, dan tersedia juga fasilitas Ruang Makan, Lounge, Laundry, ruang Gym & Fitness, ruang Karaoke, menjadikan training Anda semakin menarik dan Efektif. Hubungi kami untuk informasi Unit Training dan Mess yang tersedia dan info lainnya.",
       "image": "images/img-training2-qZIQ3_SQ.png",
