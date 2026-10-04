@@ -96,13 +96,6 @@
   ],
   "tenants": [
     {
-      "id": "tenant-1",
-      "image": "images/Tenant1.png",
-      "alt": "Sinarmas Hana Finance",
-      "title": "Sinarmas Hana Finance",
-      "desc": "LG Floor"
-    },
-    {
       "id": "tenant-2",
       "image": "images/Tenant2.png",
       "alt": "Toko Onderdil",
@@ -164,13 +157,6 @@
       "alt": "Danamas",
       "title": "Danamas",
       "desc": "Fifth Floor"
-    },
-    {
-      "id": "tenant-11",
-      "image": "images/Tenant11.png",
-      "alt": "Transpacific Finance",
-      "title": "Transpacific Finance",
-      "desc": "Second Floor"
     },
     {
       "id": "tenant-12",
